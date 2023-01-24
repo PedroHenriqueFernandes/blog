@@ -1,13 +1,19 @@
-import { Counter } from './reducer/Counter'
 import { ThemeProvider } from "styled-components"
 import { defaultTheme } from "./styles/themes/default"
 import { GlobalStyle } from "./styles/global"
-import { Header } from './components/Header'
+
+import { BrowserRouter } from "react-router-dom";
+import { Router } from "./Router";
+import { PostsProvider } from "./context/PostsContext";
 
 function App() {
   return (
     <ThemeProvider theme={defaultTheme}>
-      <Header />
+      <BrowserRouter>
+        <PostsProvider>
+          <Router />
+        </PostsProvider>
+      </BrowserRouter>
       <GlobalStyle />
     </ThemeProvider>
   )
