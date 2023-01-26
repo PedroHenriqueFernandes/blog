@@ -10,31 +10,29 @@ export const ProfileContainer = styled.div`
   border-radius: 10px;
 `
 
-export const ProfileImageContainer = styled.img`
-  width: 9.25rem;
-  height: 9.25rem;
-  border-radius: 1.5rem;
-`
-
-export const ProfileNameAndBioContainer = styled.div`
+export const PostSummaryContainer = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 1.25rem;
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0.5rem;
+    width: 100%;
+  }
 `
 
 export const ProfileInfoContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 0.5rem;
   width: 100%;
-
-  p {
-    color: ${({ theme }) => theme.text};
-  }
 `
 
-export const NameUserAndGithubLinkContainer = styled.div`
+export const TitleIssue = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -62,6 +60,7 @@ export const GithubLinkContainer = styled.a`
 
   p {
     line-height: 0;
+    color: ${({ theme }) => theme.blue};
   }
 `
 
