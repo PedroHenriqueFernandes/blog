@@ -35,7 +35,7 @@ export function Profile({ issue }: ProfileProps) {
                 <img src={returnIcon} alt="" />
                 <Link>VOLTAR</Link>
               </GithubLinkContainer>
-              <GithubLinkContainer href={issue.url}>
+              <GithubLinkContainer href={issue.html_url}>
                 <Link>VER NO GITHUB</Link>
                 <img src={arrowSquare} alt="" />
               </GithubLinkContainer>
